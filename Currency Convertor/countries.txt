@@ -1,0 +1,753 @@
+def currncy:
+
+    currency_names = ('United Arab Emirates dirham',
+    'Afghan afghani',
+    'Albanian lek',
+    'Armenian dram',
+    'Netherlands Antillean guilder
+    ','Angolan kwanza
+    ','Argentine peso
+    ','Australian dollar
+    ','Aruban florin
+    ','Azerbaijani manat
+    ','Bosnia and Herzegovina convertible mark
+    ','Barbados dollar
+    ','Bangladeshi taka
+    ','Bulgarian lev
+    ','Bahraini dinar
+    ','Burundian franc
+    ','Bermudian dollar
+    ','Brunei dollar
+    ','Boliviano
+    ','Bolivian Mvdol (funds code)
+    ','Brazilian real
+    ','Bahamian dollar
+    ','Bhutanese ngultrum
+    ','Botswana pula
+    ','Belarusian ruble
+    ','Belize dollar
+    ','Canadian dollar
+    ','Congolese franc
+    ','WIR euro (complementary currency)
+    ','Swiss franc
+    ','WIR franc (complementary currency)
+    ','Unidad de Fomento (funds code)
+    ','Chilean peso
+    ','Colombian peso
+    ','Unidad de Valor Real (UVR) (funds code)
+    ','Costa Rican colon
+    ','Cuban convertible peso
+    ','Cuban peso
+    ','Cape Verdean escudo
+    ','Czech koruna
+    ','Djiboutian franc
+    ','Danish krone
+    ','Dominican peso
+    ','Algerian dinar
+    ','Egyptian pound
+    ','Eritrean nakfa
+    ','Ethiopian birr
+    ','Euro
+    ','Fiji dollar
+    ','Falkland Islands pound
+    ','Pound sterling
+    ','Georgian lari
+    ','Ghanaian cedi
+    ','Gibraltar pound
+    ','Gambian dalasi
+    ','Guinean franc
+    ','Guatemalan quetzal
+    ','Guyanese dollar
+    ','Hong Kong dollar
+    ','Honduran lempira
+    ','Haitian gourde
+    ','Hungarian forint
+    ','Indonesian rupiah
+    ','Israeli new shekel
+    ','Indian rupee
+    ','Iraqi dinar
+    ','Iranian rial
+    ','Icelandic króna (plural: krónur)
+    ','Jamaican dollar
+    ','Jordanian dinar
+    ','Japanese yen
+    ','Kenyan shilling
+    ','Kyrgyzstani som
+    ','Cambodian riel
+    ','Comoro franc
+    ','North Korean won
+    ','South Korean won
+    ','Kuwaiti dinar
+    ','Cayman Islands dollar
+    ','Kazakhstani tenge
+    ','Lao kip
+    ','Lebanese pound
+    ','Sri Lankan rupee
+    ','Liberian dollar
+    ','Lesotho loti
+    ','Libyan dinar
+    ','Moroccan dirham
+    ','Moldovan leu
+    ','Malagasy ariary
+    ','Macedonian denar
+    ','Myanmar kyat
+    ','Mongolian tögrög
+    ','Macanese pataca
+    ','Mauritanian ouguiya
+    ','Mauritian rupee
+    ','Maldivian rufiyaa
+    ','Malawian kwacha
+    ','Mexican peso
+    ','Mexican Unidad de Inversion (UDI) (funds code)
+    ','Malaysian ringgit
+    ','ozambican metical
+    ','Namibian dollar
+    ','Nigerian naira
+    ','Nicaraguan córdoba
+    ','Norwegian krone
+    ','Nepalese rupee
+    ','New Zealand dollar
+    ','Omani rial
+    ','Panamanian balboa
+    ','Peruvian sol
+    ','Papua New Guinean kina
+    ','Philippine peso
+    ','Pakistani rupee
+    ','Polish złoty
+    ','Paraguayan guaraní
+    ','Qatari riyal
+    ','Romanian leu
+    ','Serbian dinar
+    ','Renminbi
+    ','Russian ruble
+    ','Rwandan franc
+    ','Saudi riyal
+    ','Solomon Islands dollar
+    ','Seychelles rupee
+    ','Sudanese pound
+    ','Swedish krona (plural: kronor)
+    ','Singapore dollar
+    ','Saint Helena pound
+    ','Sierra Leonean leone (new leone)
+    ','Sierra Leonean leone (old leone)
+    ','Somali shilling
+    ','Surinamese dollar
+    ','South Sudanese pound
+    ','São Tomé and Príncipe dobra
+    ','Salvadoran colón
+    ','Syrian pound
+    ','Swazi lilangeni
+    ','Thai baht
+    ','Tajikistani somoni
+    ','Turkmenistan manat
+    ','Tunisian dinar
+    ','Tongan paʻanga
+    ','Turkish lira
+    ','Trinidad and Tobago dollar
+    ','New Taiwan dollar
+    ','Tanzanian shilling
+    ','Ukrainian hryvnia
+    ','Ugandan shilling
+    ','United States dollar
+    ','United States dollar (next day) (funds code)
+    ','Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)
+    ','Uruguayan peso
+    ','Unidad previsional
+    ','Uzbekistan sum
+    ','Venezuelan digital bolívar
+    ','Venezuelan sovereign bolívar
+    ','Vietnamese đồng
+    ','Vanuatu vatu
+    ','Samoan tala
+    ','CFA franc BEAC
+    ','Silver (one troy ounce)
+    ','Gold (one troy ounce)',
+    'European Composite Unit (EURCO) (bond market unit)
+    ','European Monetary Unit (E.M.U.-6) (bond market unit)
+    ','European Unit of Account 9 (E.U.A.-9) (bond market unit)
+    ','European Unit of Account 17 (E.U.A.-17) (bond market unit)
+    ','East Caribbean dollar
+    ','Special drawing rights
+    ','CFA franc BCEAO
+    ','Palladium (one troy ounce)
+    ','CFP franc (franc Pacifique)
+    ','Platinum (one troy ounce)
+    ','SUCRE',
+    'ADB Unit of Account
+    ','Yemeni rial
+    ','South African rand
+    ''Zambian kwacha',
+    'Zimbabwean dollar (fifth)')
+
+    for i in range(len(currency_names)):
+  print(f"{i}. {currency_names[i]}")
+
+
+print('''\n1. United Arab Emirates dirham
+\n2. Afghan afghani
+\n3. Albanian lek
+\n4. Armenian dram
+\n5. Netherlands Antillean guilder
+\n6. Angolan kwanza
+\n7. Argentine peso
+\n8. Australian dollar
+\n9. Aruban florin
+\n10. Azerbaijani manat
+\n11. Bosnia and Herzegovina convertible mark
+\n12. Barbados dollar
+\n13. Bangladeshi taka
+\n14. Bulgarian lev
+\n15. Bahraini dinar
+\n16. Burundian franc
+\n17. Bermudian dollar
+\n18. Brunei dollar
+\n19. Boliviano
+\n20. Bolivian Mvdol (funds code)
+\n21. Brazilian real
+\n22. Bahamian dollar
+\n23. Bhutanese ngultrum
+\n24. Botswana pula
+\n25. Belarusian ruble
+\n26. Belize dollar
+\n27. Canadian dollar
+\n28. Congolese franc
+\n29. WIR euro (complementary currency)
+\n30. Swiss franc
+\n31. WIR franc (complementary currency)
+\n32. Unidad de Fomento (funds code)
+\n34. Chilean peso
+\n35. Colombian peso
+\n36. Unidad de Valor Real (UVR) (funds code)[6]
+\n37. Costa Rican colon
+\n38. Cuban convertible peso
+\n39. Cuban peso
+\n40. Cape Verdean escudo
+\n41. Czech koruna
+\n42. Djiboutian franc
+\n43. Danish krone
+\n44. Dominican peso
+\n45. Algerian dinar
+\n46. Egyptian pound
+\n47. Eritrean nakfa
+\n48. Ethiopian birr
+\n49. Euro
+\n50. Fiji dollar
+\n51. Falkland Islands pound
+\n52. Pound sterling
+\n53. Georgian lari
+\n54. Ghanaian cedi
+\n55. Gibraltar pound
+\n56. Gambian dalasi
+\n57. Guinean franc
+\n58. Guatemalan quetzal
+\n59. Guyanese dollar
+\n60. Hong Kong dollar
+\n61. Honduran lempira
+\n62. Haitian gourde
+\n63. Hungarian forint
+\n64. Indonesian rupiah
+\n65. Israeli new shekel
+\n66. Indian rupee
+\n67. Iraqi dinar
+\n68. Iranian rial
+\n69. Icelandic króna (plural: krónur)
+\n70. Jamaican dollar
+\n71. Jordanian dinar
+\n72. Japanese yen
+\n73. Kenyan shilling
+\n74. Kyrgyzstani som
+\n75. Cambodian riel
+\n76. Comoro franc
+\n77. North Korean won
+\n78. South Korean won
+\n79. Kuwaiti dinar
+\n80. Cayman Islands dollar
+\n81. Kazakhstani tenge
+\n82. Lao kip
+\n83. Lebanese pound
+\n84. Sri Lankan rupee
+\n85. Liberian dollar
+\n86. Lesotho loti
+\n87. Libyan dinar
+\n88. Moroccan dirham
+\n89. Moldovan leu
+\n90. Malagasy ariary
+\n91. Macedonian denar
+\n92. Myanmar kyat
+\n93. Mongolian tögrög
+\n94. Macanese pataca
+\n95. Mauritanian ouguiya
+\n96. Mauritian rupee
+\n97. Maldivian rufiyaa
+\n98. Malawian kwacha
+\n99. Mexican peso
+\n100. Mexican Unidad de Inversion (UDI) (funds code)
+\n101. Malaysian ringgit
+\n102. ozambican metical
+\n103. Namibian dollar
+\n104. Nigerian naira
+\n105. Nicaraguan córdoba
+\n106. Norwegian krone
+\n107. Nepalese rupee
+\n108. New Zealand dollar
+\n109. Omani rial
+\n110. Panamanian balboa
+\n111. Peruvian sol
+\n112. Papua New Guinean kina
+\n113. Philippine peso[10]
+\n114. Pakistani rupee
+\n115. Polish złoty
+\n116. Paraguayan guaraní
+\n117. Qatari riyal
+\n118. Romanian leu
+\n119. Serbian dinar
+\n120. Renminbi
+\n121. Russian ruble
+\n122. Rwandan franc
+\n123. Saudi riyal
+\n124. Solomon Islands dollar
+\n125. Seychelles rupee
+\n126. Sudanese pound
+\n127. Swedish krona (plural: kronor)
+\n128. Singapore dollar
+\n129. Saint Helena pound
+\n130. Sierra Leonean leone (new leone)[12][13][14]
+\n131. Sierra Leonean leone (old leone)[12][13][14][15]
+\n132. Somali shilling
+\n133. Surinamese dollar
+\n134. South Sudanese pound
+\n135. São Tomé and Príncipe dobra
+\n136. Salvadoran colón
+\n137. Syrian pound
+\n138. Swazi lilangeni
+\n139. Thai baht
+\n140. Tajikistani somoni
+\n141. Turkmenistan manat
+\n142. Tunisian dinar
+\n143. Tongan paʻanga
+\n144. Turkish lira
+\n145. Trinidad and Tobago dollar
+\n146. New Taiwan dollar
+\n147. Tanzanian shilling
+\n148. Ukrainian hryvnia
+\n149. Ugandan shilling
+\n150. United States dollar
+\n151. United States dollar (next day) (funds code)
+\n152. Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)
+\n153. Uruguayan peso
+\n154. Unidad previsional
+\n155. Uzbekistan sum
+\n156. Venezuelan digital bolívar
+\n157. Venezuelan sovereign bolívar
+\n158. Vietnamese đồng
+\n159. Vanuatu vatu
+\n160. Samoan tala
+\n161. CFA franc BEAC
+\n162. Silver (one troy ounce)
+\n163. Gold (one troy ounce)
+\n164. European Composite Unit (EURCO) (bond market unit)
+\n165. European Monetary Unit (E.M.U.-6) (bond market unit)
+\n166. European Unit of Account 9 (E.U.A.-9) (bond market unit)
+\n167. European Unit of Account 17 (E.U.A.-17) (bond market unit)
+\n168. East Caribbean dollar
+\n169. Special drawing rights
+\n170. CFA franc BCEAO
+\n171. Palladium (one troy ounce)
+\n172. CFP franc (franc Pacifique)
+\n173. Platinum (one troy ounce)
+\n174. SUCRE
+\n175. ADB Unit of Account
+\n176. Yemeni rial
+\n177. South African rand
+\n178. Zambian kwacha
+\n179. Zimbabwean dollar (fifth)
+''')
+
+
+
+
+
+
+
+
+
+
+
+
+
+currency_name = (United Arab Emirates dirham
+Afghan afghani
+Albanian lek
+Armenian dram
+Netherlands Antillean guilder
+Angolan kwanza
+Argentine peso
+Australian dollar
+Aruban florin
+Azerbaijani manat
+Bosnia and Herzegovina convertible mark
+Barbados dollar
+Bangladeshi taka
+Bulgarian lev
+Bahraini dinar
+Burundian franc
+Bermudian dollar
+Brunei dollar
+Boliviano
+Bolivian Mvdol (funds code)
+Brazilian real
+Bahamian dollar
+Bhutanese ngultrum
+Botswana pula
+Belarusian ruble
+Belize dollar
+Canadian dollar
+Congolese franc
+WIR euro (complementary currency)
+Swiss franc
+WIR franc (complementary currency)
+Unidad de Fomento (funds code)
+Chilean peso
+Colombian peso
+Unidad de Valor Real (UVR) (funds code)[6]
+Costa Rican colon
+Cuban convertible peso
+Cuban peso
+Cape Verdean escudo
+Czech koruna
+Djiboutian franc
+Danish krone
+Dominican peso
+Algerian dinar
+Egyptian pound
+Eritrean nakfa
+Ethiopian birr
+Euro
+Fiji dollar
+Falkland Islands pound
+Pound sterling
+Georgian lari
+Ghanaian cedi
+Gibraltar pound
+Gambian dalasi
+Guinean franc
+Guatemalan quetzal
+Guyanese dollar
+Hong Kong dollar
+Honduran lempira
+Haitian gourde
+Hungarian forint
+Indonesian rupiah
+Israeli new shekel
+Indian rupee
+Iraqi dinar
+Iranian rial
+Icelandic króna (plural: krónur)
+Jamaican dollar
+Jordanian dinar
+Japanese yen
+Kenyan shilling
+Kyrgyzstani som
+Cambodian riel
+Comoro franc
+North Korean won
+South Korean won
+Kuwaiti dinar
+Cayman Islands dollar
+Kazakhstani tenge
+Lao kip
+Lebanese pound
+Sri Lankan rupee
+Liberian dollar
+Lesotho loti
+Libyan dinar
+Moroccan dirham
+Moldovan leu
+Malagasy ariary
+Macedonian denar
+Myanmar kyat
+Mongolian tögrög
+Macanese pataca
+Mauritanian ouguiya
+Mauritian rupee
+Maldivian rufiyaa
+Malawian kwacha
+Mexican peso
+Mexican Unidad de Inversion (UDI) (funds code)
+Malaysian ringgit
+ozambican metical
+Namibian dollar
+Nigerian naira
+Nicaraguan córdoba
+Norwegian krone
+Nepalese rupee
+New Zealand dollar
+Omani rial
+Panamanian balboa
+Peruvian sol
+Papua New Guinean kina
+Philippine peso[10]
+Pakistani rupee
+Polish złoty
+Paraguayan guaraní
+Qatari riyal
+Romanian leu
+Serbian dinar
+Renminbi
+Russian ruble
+Rwandan franc
+Saudi riyal
+Solomon Islands dollar
+Seychelles rupee
+Sudanese pound
+Swedish krona (plural: kronor)
+Singapore dollar
+Saint Helena pound
+Sierra Leonean leone (new leone)[12][13][14]
+Sierra Leonean leone (old leone)[12][13][14][15]
+Somali shilling
+Surinamese dollar
+South Sudanese pound
+São Tomé and Príncipe dobra
+Salvadoran colón
+Syrian pound
+Swazi lilangeni
+Thai baht
+Tajikistani somoni
+Turkmenistan manat
+Tunisian dinar
+Tongan paʻanga
+Turkish lira
+Trinidad and Tobago dollar
+New Taiwan dollar
+Tanzanian shilling
+Ukrainian hryvnia
+Ugandan shilling
+United States dollar
+United States dollar (next day) (funds code)
+Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)
+Uruguayan peso
+Unidad previsional
+Uzbekistan sum
+Venezuelan digital bolívar
+Venezuelan sovereign bolívar
+Vietnamese đồng
+Vanuatu vatu
+Samoan tala
+CFA franc BEAC
+Silver (one troy ounce)
+Gold (one troy ounce)
+European Composite Unit (EURCO) (bond market unit)
+European Monetary Unit (E.M.U.-6) (bond market unit)
+European Unit of Account 9 (E.U.A.-9) (bond market unit)
+European Unit of Account 17 (E.U.A.-17) (bond market unit)
+East Caribbean dollar
+Special drawing rights
+CFA franc BCEAO
+Palladium (one troy ounce)
+CFP franc (franc Pacifique)
+Platinum (one troy ounce)
+SUCRE
+ADB Unit of Account
+Yemeni rial
+South African rand
+Zambian kwacha
+Zimbabwean dollar (fifth))
+
+
+
+
+
+
+
+
+
+
+
+'''
+Currency;
+
+United Arab Emirates dirham
+Afghan afghani
+Albanian lek
+Armenian dram
+Netherlands Antillean guilder
+Angolan kwanza
+Argentine peso
+Australian dollar
+Aruban florin
+Azerbaijani manat
+Bosnia and Herzegovina convertible mark
+Barbados dollar
+Bangladeshi taka
+Bulgarian lev
+Bahraini dinar
+Burundian franc
+Bermudian dollar
+Brunei dollar
+Boliviano
+Bolivian Mvdol (funds code)
+Brazilian real
+Bahamian dollar
+Bhutanese ngultrum
+Botswana pula
+Belarusian ruble
+Belize dollar
+Canadian dollar
+Congolese franc
+WIR euro (complementary currency)
+Swiss franc
+WIR franc (complementary currency)
+Unidad de Fomento (funds code)
+Chilean peso
+Colombian peso
+Unidad de Valor Real (UVR) (funds code)[6]
+Costa Rican colon
+Cuban convertible peso
+Cuban peso
+Cape Verdean escudo
+Czech koruna
+Djiboutian franc
+Danish krone
+Dominican peso
+Algerian dinar
+Egyptian pound
+Eritrean nakfa
+Ethiopian birr
+Euro
+Fiji dollar
+Falkland Islands pound
+Pound sterling
+Georgian lari
+Ghanaian cedi
+Gibraltar pound
+Gambian dalasi
+Guinean franc
+Guatemalan quetzal
+Guyanese dollar
+Hong Kong dollar
+Honduran lempira
+Haitian gourde
+Hungarian forint
+Indonesian rupiah
+Israeli new shekel
+Indian rupee
+Iraqi dinar
+Iranian rial
+Icelandic króna (plural: krónur)
+Jamaican dollar
+Jordanian dinar
+Japanese yen
+Kenyan shilling
+Kyrgyzstani som
+Cambodian riel
+Comoro franc
+North Korean won
+South Korean won
+Kuwaiti dinar
+Cayman Islands dollar
+Kazakhstani tenge
+Lao kip
+Lebanese pound
+Sri Lankan rupee
+Liberian dollar
+Lesotho loti
+Libyan dinar
+Moroccan dirham
+Moldovan leu
+Malagasy ariary
+Macedonian denar
+Myanmar kyat
+Mongolian tögrög
+Macanese pataca
+Mauritanian ouguiya
+Mauritian rupee
+Maldivian rufiyaa
+Malawian kwacha
+Mexican peso
+Mexican Unidad de Inversion (UDI) (funds code)
+Malaysian ringgit
+Mozambican metical
+Namibian dollar
+Nigerian naira
+Nicaraguan córdoba
+Norwegian krone
+Nepalese rupee
+New Zealand dollar
+Omani rial
+Panamanian balboa
+Peruvian sol
+Papua New Guinean kina
+Philippine peso[10]
+Pakistani rupee
+Polish złoty
+Paraguayan guaraní
+Qatari riyal
+Romanian leu
+Serbian dinar
+Renminbi[11]
+Russian ruble
+Rwandan franc
+Saudi riyal
+Solomon Islands dollar
+Seychelles rupee
+Sudanese pound
+Swedish krona (plural: kronor)
+Singapore dollar
+Saint Helena pound
+Sierra Leonean leone (new leone)[12][13][14]
+Sierra Leonean leone (old leone)[12][13][14][15]
+Somali shilling
+Surinamese dollar
+South Sudanese pound
+São Tomé and Príncipe dobra
+Salvadoran colón
+Syrian pound
+Swazi lilangeni
+Thai baht
+Tajikistani somoni
+Turkmenistan manat
+Tunisian dinar
+Tongan paʻanga
+Turkish lira
+Trinidad and Tobago dollar
+New Taiwan dollar
+Tanzanian shilling
+Ukrainian hryvnia
+Ugandan shilling
+United States dollar
+United States dollar (next day) (funds code)
+Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)
+Uruguayan peso
+Unidad previsional[17]
+Uzbekistan sum
+Venezuelan digital bolívar[18]
+Venezuelan sovereign bolívar[10]
+Vietnamese đồng
+Vanuatu vatu
+Samoan tala
+CFA franc BEAC
+Silver (one troy ounce)
+Gold (one troy ounce)
+European Composite Unit (EURCO) (bond market unit)
+European Monetary Unit (E.M.U.-6) (bond market unit)
+European Unit of Account 9 (E.U.A.-9) (bond market unit)
+European Unit of Account 17 (E.U.A.-17) (bond market unit)
+East Caribbean dollar
+Special drawing rights
+CFA franc BCEAO
+Palladium (one troy ounce)
+CFP franc (franc Pacifique)
+Platinum (one troy ounce)
+SUCRE
+Code reserved for testing
+ADB Unit of Account
+No currency
+Yemeni rial
+South African rand
+Zambian kwacha
+Zimbabwean dollar (fifth)[e]
+
+'''
+
+
